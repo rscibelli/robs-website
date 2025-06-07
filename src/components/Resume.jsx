@@ -106,7 +106,7 @@ function Resume() {
                 <div className="mb-3">
                   <h5 className="mb-1 text-start">Associate Infrastructure Engineer</h5>
                   <p className="mb-2 text-muted text-start">Liberty Mutual Insurance · 2020 - 2022</p>
-                  <p className="mb-1 small text-secondary text-start">Enhanced the Kafka topic creation experience by assisting with the development a self-service tool</p>
+                  <p className="mb-1 small text-secondary text-start">Enhanced the Kafka topic creation experience by assisting with the development of a self-service tool</p>
                   <p className="mb-1 small text-secondary text-start">Secured the Kafka metadata API using Apigee to improve ease of access and secure customer data</p>
                   <p className="mb-1 small text-secondary text-start">Optimized our deployments by utilizing the Blue/Green technique to ensure no downtime</p>
                   <p className="mb-1 small text-secondary text-start">Ensured the integrity of our deployed code by developing ~50 integration tests against the self-service Kafka topic tool</p>
