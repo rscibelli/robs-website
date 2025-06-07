@@ -14,7 +14,6 @@ function Resume() {
       }}
     >
       <div className="container bg-white p-5 rounded shadow">
-        {/* About Me Section */}
         <section className="mb-5">
           <div className="row">
             <div className="col-md-4 d-flex justify-content-center align-items-center">
@@ -34,16 +33,14 @@ function Resume() {
               <h1 className="display-4">Robert Scibelli</h1>
               <p className="lead mb-4">Sr. Software Engineer</p>
               <p className="px-5">
-                Dedicated Senior Software Engineer with six years of experience in developing scalable backend systems and robust infrastructure. I excel at tackling complex technical challenges, driving modernization efforts, and delivering efficient solutions that significantly improve system performance.
+                Dedicated Senior Software Engineer with six years of experience in developing scalable backend systems and robust infrastructure. I excel at tackling complex technical challenges, driving modernization efforts, and delivering efficient solutions with reliable outcomes
               </p>
             </div>
           </div>
         </section>
 
-        {/* Horizontal rule after About Me, before boxed sections begin */}
         <hr className="my-5" />
 
-        {/* Skills Section - Full Width Box with Title Above */}
         <section className="mb-5">
           <div className="row mb-3">
             <div className="col-12">
@@ -74,7 +71,6 @@ function Resume() {
           </div>
         </section>
 
-        {/* Experience Section - Full Width Box with Title Above */}
         <section className="mb-5">
           <div className="row mb-3">
             <div className="col-12">
@@ -107,17 +103,19 @@ function Resume() {
                 <hr className="my-3" />
 
                 {/* Associate Infrastructure Engineer */}
-                <div className="mb-0">
+                <div className="mb-3">
                   <h5 className="mb-1 text-start">Associate Infrastructure Engineer</h5>
                   <p className="mb-2 text-muted text-start">Liberty Mutual Insurance · 2020 - 2022</p>
-                  <p className="mb-0 small text-secondary text-start">Dedicated software engineer with six years of experience in backend API development and infrastructure solutions. In my role as a Kafka administrator, I have been instrumental in managing and optimizing event-driven architectures to ensure seamless data flow across systems.</p>
+                  <p className="mb-1 small text-secondary text-start">Enhanced the Kafka topic creation experience by assisting with the development a self-service tool</p>
+                  <p className="mb-1 small text-secondary text-start">Secured the Kafka metadata API using Apigee to improve ease of access and secure customer data</p>
+                  <p className="mb-1 small text-secondary text-start">Optimized our deployments by utilizing the Blue/Green technique to ensure no downtime</p>
+                  <p className="mb-1 small text-secondary text-start">Ensured the integrity of our deployed code by developing ~50 integration tests against the self-service Kafka topic tool</p>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Projects Section - Full Width Box with Title Above (and internal cards) */}
         <section className="mb-5">
           <div className="row mb-3">
             <div className="col-12">
@@ -126,48 +124,64 @@ function Resume() {
           </div>
           <div className="row">
             <div className="col-12">
-              <div className="card shadow-sm p-4"> {/* Outer card for the whole Projects section */}
-                <div className="row">
-                  {/* Home Automation Project Card - NOW INDIVIDUAL CARD AGAIN */}
+              <div className="card shadow-sm p-4">
+                <div className="row justify-content-center">
+
                   <div className="col-md-6 mb-4">
-                    <div className="card h-100 shadow-sm"> {/* Individual card for this project */}
-                      <div className="card-body">
-                        <h5 className="card-title">Home Automation</h5>
-                        <p className="mb-2 text-muted">February 2025</p>
-                        <p className="card-text mb-0 text-secondary">
-                          Established a smart home setup using a Raspberry Pi running Home Assistant OS, integrating Zigbee and Z-Wave controllers for seamless device interaction.
+                    <div className="card h-100 shadow-sm">
+                      <div className="card-body text-start">
+                        <h5 className="card-title">Wedding Website</h5>
+                        <p className="mb-2 text-muted">August 2024</p>
+                        <p className="card-text mb-1 text-secondary">
+                          Developed a wedding website using React and Go, hosted on a local Raspberry Pi using Docker
+                        </p>
+                        <p className="card-text mb-1 text-secondary">
+                          Implemented an interactive song request feature that allowed guests to submit their choices, which were processed and displayed dynamically in a user-friendly table on the frontend
                         </p>
                       </div>
                     </div>
                   </div>
 
-                  {/* Wedding Website Project Card - NOW INDIVIDUAL CARD AGAIN */}
                   <div className="col-md-6 mb-4">
-                    <div className="card h-100 shadow-sm"> {/* Individual card for this project */}
-                      <div className="card-body">
-                        <h5 className="card-title">Wedding Website</h5>
-                        <p className="mb-2 text-muted">August 2024</p>
-                        <p className="card-text mb-0 text-secondary">
-                          Developed a wedding website using React and Go, hosted on a local Raspberry Pi using Docker.
+                    <div className="card h-100 shadow-sm">
+                      <div className="card-body text-start">
+                        <h5 className="card-title">Home Automation</h5>
+                        <p className="mb-2 text-muted">February 2025</p>
+                        <p className="card-text mb-1 text-secondary">
+                          Established a smart home setup using a Raspberry Pi running Home Assistant OS
                         </p>
-                        <p className="card-text mb-0 text-secondary">
-                          Implemented an interactive song request feature that allowed guests to submit their choices, which were processed and displayed dynamically in a user-friendly table on the frontend.
+                        <p className="card-text mb-1 text-secondary">
+                          Integrated Zigbee and Z-Wave controllers to control the various devices around my home
                         </p>
                       </div>
                     </div>
                   </div>
+
+                  <div className="col-md-6 mb-4">
+                    <div className="card h-100 shadow-sm">
+                      <div className="card-body text-start">
+                        <h5 className="card-title">Personal Website (rscibelli.com)</h5>
+                        <p className="mb-2 text-muted">June 2025</p>
+                        <p className="card-text mb-1 text-secondary">
+                          Personal website to showcase the contents of my resume on an easy-to-nagivate website
+                        </p>
+                        <p className="card-text mb-1 text-secondary">
+                          Hosted on a Raspberry Pi and served up using Nginx
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Hobbies Section - NO BIG BOX, more minimal */}
         <section className="mb-5">
-          {/* Hobbies content without a card, contained in a centered column */}
           <div className="row">
-            <div className="col-md-8 mx-auto"> {/* Centered column for the content */}
-              <h4 className="mb-2">My Interests</h4> {/* Keep text-start for internal consistency */}
+            <div className="col-md-8 mx-auto">
+              <h4 className="mb-2">Hobbies</h4>
               <p className="text-muted mb-0">
                 🏃‍♂️ Running • 🏌️ Golfing • 🥾 Hiking • 💻 Playing with tech
               </p>
@@ -176,7 +190,7 @@ function Resume() {
         </section>
 
         <footer className="text-center mt-5 pt-4 border-top">
-          <p className="text-muted">© {new Date().getFullYear()} Robert Scibelli</p>
+          <p className="text-muted small">Created and hosted by Robert Scibelli</p>
         </footer>
       </div>
     </div>
