@@ -74,6 +74,40 @@ function Resume() {
         <section className="mb-5">
           <div className="row mb-3">
             <div className="col-12">
+              <h2 className="text-start ps-4">Education</h2>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-12">
+              <div className="card shadow-sm p-4">
+                
+                <div className="list-group list-group-flush">
+                  <div className="list-group-item">
+                    <div className="d-flex justify-content-center">
+                      <img
+                        src="https://www.umass.edu/sites/default/files/2023-03/UMass_Seal_Medium_PMS_202_0.png"
+                        alt="UMass Seal"
+                        className="me-3"
+                        style={{ width: "70px", height: "70px", objectFit: "contain" }}
+                      />
+
+                      <div>
+                        <h5 className="mb-1">University of Massachusetts Amherst</h5>
+                        <p className="mb-1 text-muted">Bachelor of Science in Computer Science</p>
+                        <p className="mb-1">Graduated: 2020</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="mb-5">
+          <div className="row mb-3">
+            <div className="col-12">
               <h2 className="text-start ps-4">Experience</h2>
             </div>
           </div>
