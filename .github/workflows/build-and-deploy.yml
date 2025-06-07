@@ -1,0 +1,21 @@
+name: Build and Deploy
+
+on: [push]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Coming soon message
+        run: echo "Hopefully some Pi pushing actions coming soon"
+
+      # - name: Check out repository code
+      #   uses: actions/checkout@v4
+
+      # - name: Setup Node
+      #   uses: actions/setup-node@v4
+      #   with:
+      #     node-version: 22
+
+      # - name: Build
+      #   run: npm run build
