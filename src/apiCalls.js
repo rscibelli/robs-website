@@ -1,4 +1,4 @@
-const ENDPOINT = "http://localhost:3000";
+const ENDPOINT = "localhost:3000";
 
 async function runningSummary() {
     const response = await fetch(ENDPOINT + "/api/todays-runs-summary");
