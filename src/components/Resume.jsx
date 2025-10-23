@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Resume() {
@@ -18,7 +19,7 @@ function Resume() {
           <div className="row">
             <div className="col-md-4 d-flex justify-content-center align-items-center">
               <img
-                src="https://lh3.googleusercontent.com/pw/AP1GczN1qlZPQSuaYwmKN7txkz-DHZA8qUg5CbwqRHpj1yNEICjQoDhBv4P072S-7zPxwWPQGat8YBotoGI6W_vjvKE0NfW6N_LYFCUHNL8QW-DkBXFZtL_-ca9UhnYREttU6cjwdV0yS57ck4HtspQgnYChJQ=w596-h705-s-no-gm?authuser=0" // Updated with your Google Photos link
+                src="https://lh3.googleusercontent.com/pw/AP1GczN1qlZPQSuaYwmKN7txkz-DHZA8qUg5CbwqRHpj1yNEICjQoDhBv4P072S-7zPxwWPQGat8YBotoGI6W_vjvKE0NfW6N_LYFCUHNL8QW-DkBXFZtL_-ca9UhnYREttU6cjwdV0yS57ck4HtspQgnYChJQ=w596-h705-s-no-gm?authuser=0"
                 alt="Robert Scibelli Profile"
                 className="img-fluid rounded-circle shadow-sm mb-3"
                 style={{
@@ -217,7 +218,7 @@ function Resume() {
             <div className="col-md-8 mx-auto">
               <h4 className="mb-2">Hobbies</h4>
               <p className="text-muted mb-0">
-                🏃‍♂️ Running • 🏌️ Golfing • 🥾 Hiking • 💻 Playing with tech
+                🏃‍♂️ <Link to="/run" className="text-blue-600 hover:underline">Running</Link> • 🏌️ Golfing • 🥾 Hiking • 💻 Playing with tech
               </p>
             </div>
           </div>
