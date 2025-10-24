@@ -22,8 +22,6 @@ function Running() {
         fetchData();
     }, []);
 
-    console.log("data: " + data);
-
     if (loading) return <p className="text-gray-500">Loading...</p>;
     if (error) return <p className="text-red-500">Error: {error}</p>;
 
