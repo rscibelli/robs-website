@@ -1,7 +1,7 @@
-const ENDPOINT = "http://localhost:3000";
+const baseUrl = "https://api.rscibelli.com";
 
 async function runningSummary() {
-    const response = await fetch(ENDPOINT + "/api/todays-runs-summary");
+    const response = await fetch(baseUrl + "/api/todays-runs-summary");
     if (!response.ok) {
         console.log("Error calling endpoint:", response.statusText);
     }
