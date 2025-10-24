@@ -6,8 +6,6 @@ async function runningSummary() {
         console.log("Error calling endpoint:", response.statusText);
     }
     const data = await response.text();
-
-    console.log(data);
     return data;
 }
 

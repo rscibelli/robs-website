@@ -22,12 +22,10 @@ function Running() {
         fetchData();
     }, []);
 
+    console.log("data: " + data);
+
     if (loading) return <p className="text-gray-500">Loading...</p>;
     if (error) return <p className="text-red-500">Error: {error}</p>;
-
-    if (!data || !data.runs || !data.summary) {
-        return <p className="text-muted">No data available.</p>;
-    }
 
     return (
         <div className="container my-5">
