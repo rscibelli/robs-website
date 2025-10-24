@@ -8,19 +8,26 @@ function Running() {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        runningSummary()
-        .then((result) => {
-            setData(result);
-            setLoading(false);
-        })
-        .catch((err) => {
-            setError(err.message);
-            setLoading(false);
-        });
+        const fetchData = async () => {
+            try {
+                const result = await runningSummary();
+                setData(result);
+            } catch (err) {
+                setError(err.message);
+            } finally {
+                setLoading(false);
+            }
+        };
+
+        fetchData();
     }, []);
 
     if (loading) return <p className="text-gray-500">Loading...</p>;
     if (error) return <p className="text-red-500">Error: {error}</p>;
+
+    if (!data || !data.runs || !data.summary) {
+        return <p className="text-muted">No data available.</p>;
+    }
 
     return (
         <div className="container my-5">
