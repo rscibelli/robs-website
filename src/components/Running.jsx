@@ -1,6 +1,8 @@
 import { React, useEffect, useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { runningSummary } from '../apiCalls';
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 
 function Running() {
     const [data, setData] = useState(null);
@@ -58,17 +60,14 @@ function Running() {
                 </table>
             </div>
 
-            <div className="card shadow-sm">
+            <div className="card shadow-sm text-start">
                 <div className="card-body">
-                <h4 className="card-title mb-3">
-                    Summary ({new Date(data.summary.insertDate).toLocaleDateString("en-US")})
-                </h4>
-                <div
-                    className="card-text"
-                    dangerouslySetInnerHTML={{
-                    __html: data.summary.summary.replace(/\n/g, "<br/>"),
-                    }}
-                ></div>
+                    <h4 className="card-title mb-3 text-center">
+                        Summary ({new Date(data.summary.insertDate).toLocaleDateString("en-US")})
+                    </h4>
+                    <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                        {data.summary.summary}
+                    </ReactMarkdown>
                 </div>
             </div>
         </div>
