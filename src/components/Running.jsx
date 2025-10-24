@@ -22,8 +22,6 @@ function Running() {
     if (loading) return <p className="text-gray-500">Loading...</p>;
     if (error) return <p className="text-red-500">Error: {error}</p>;
 
-    const { runs, summary } = data;
-
     return (
         <div className="container my-5">
             <h2 className="mb-4 text-center">🏃‍♂️ Running Summary</h2>
@@ -42,7 +40,7 @@ function Running() {
                     </tr>
                 </thead>
                 <tbody>
-                    {runs.map((run) => (
+                    {data.runs.map((run) => (
                     <tr key={run.id}>
                         <td>{new Date(run.runDate).toLocaleDateString("en-US")}</td>
                         <td>{run.name}</td>
@@ -60,12 +58,12 @@ function Running() {
             <div className="card shadow-sm">
                 <div className="card-body">
                 <h4 className="card-title mb-3">
-                    Summary ({new Date(summary.insertDate).toLocaleDateString("en-US")})
+                    Summary ({new Date(data.summary.insertDate).toLocaleDateString("en-US")})
                 </h4>
                 <div
                     className="card-text"
                     dangerouslySetInnerHTML={{
-                    __html: summary.summary.replace(/\n/g, "<br/>"),
+                    __html: data.summary.summary.replace(/\n/g, "<br/>"),
                     }}
                 ></div>
                 </div>
