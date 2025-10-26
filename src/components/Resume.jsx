@@ -207,6 +207,21 @@ function Resume() {
                     </div>
                   </div>
 
+                  <div className="col-md-6 mb-4">
+                    <div className="card h-100 shadow-sm">
+                      <div className="card-body text-start">
+                        <h5 className="card-title">AI Running Analyzer</h5>
+                        <p className="mb-2 text-muted">October 2025</p>
+                        <p className="card-text mb-1 text-secondary">
+                          Analysis of my recent runs using data pulled from Garmin MCP and insights generated with Gemini
+                        </p>
+                        <p className="card-text mb-1 text-secondary">
+                          Utilized an Express JS backend to facilitate the API calls, and stored the data in a mySql database
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
                 </div>
               </div>
             </div>

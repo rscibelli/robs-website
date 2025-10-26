@@ -3,11 +3,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { runningSummary } from '../apiCalls';
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
+import { useNavigate } from "react-router-dom";
 
 function Running() {
     const [data, setData] = useState(null);
     const [error, setError] = useState(null);
     const [loading, setLoading] = useState(true);
+    const navigate = useNavigate();
 
     useEffect(() => {
         const fetchData = async () => {
@@ -29,7 +31,17 @@ function Running() {
 
     return (
         <div className="container my-5">
-            <h2 className="mb-4 text-center">🏃‍♂️ Running Summary</h2>
+            <div className="text-start mt-3 ms-3">
+                <button
+                    type="button"
+                    className="btn btn-light d-inline-flex"
+                    onClick={() => navigate("/")}
+                >
+                    <span className="me-2">←</span> Back to Home
+                </button>
+            </div>
+
+            <h2 className="mb-4 text-center">Rob's Running Analysis</h2>
 
             <div className="table-responsive mb-5">
                 <table className="table table-striped table-bordered align-middle shadow-sm">
