@@ -31,7 +31,7 @@ function Running() {
 
     return (
         <div className="container my-5">
-            <div className="text-start mt-3 ms-3">
+            <div className="text-start mt-3 ms-3 mb-3">
                 <button
                     type="button"
                     className="btn btn-light d-inline-flex"
