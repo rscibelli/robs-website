@@ -210,7 +210,14 @@ function Resume() {
                   <div className="col-md-6 mb-4">
                     <div className="card h-100 shadow-sm">
                       <div className="card-body text-start">
-                        <h5 className="card-title">AI Running Analyzer</h5>
+                        <div className="d-flex align-items-center mb-2">
+                          <h5 className="card-title mb-0 me-1">AI Running Analyzer</h5>
+                          <img
+                            src="https://s.yimg.com/ny/api/res/1.2/7PlwoASYVOibe51oIZQV5g--/YXBwaWQ9aGlnaGxhbmRlcjt3PTcwNTtoPTcwNQ--/https://media.zenfs.com/en/mashable_articles_863/c6160349d9c9bb7363effe9808d8ed7d"
+                            alt="Gemini Logo"
+                            style={{ width: '28px', height: '28px', marginRight: '8px' }}
+                          />
+                        </div>
                         <p className="mb-2 text-muted">October 2025</p>
                         <p className="card-text mb-1 text-secondary">
                           Analysis of my recent runs using data pulled from Garmin MCP and insights generated with Gemini
