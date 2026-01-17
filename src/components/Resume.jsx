@@ -55,11 +55,11 @@ function Resume() {
                   <tbody>
                     <tr>
                       <th scope="row" className="text-start" style={{ width: '35%' }}>Programming Languages</th>
-                      <td className="text-start">Java, Go, JavaScript, Typescript, HTML, Python</td>
+                      <td className="text-start">Java, Go, JavaScript, C#, Typescript, HTML, Python</td>
                     </tr>
                     <tr>
                       <th scope="row" className="text-start" style={{ width: '35%' }}>Tools & Technologies</th>
-                      <td className="text-start">Kafka, Confluent Suite, OpenRewrite, Kubernetes, Docker, AWS, Spring, Spring Boot, Maven, React, Node.js, GitHub, Atlassian Suite</td>
+                      <td className="text-start">Spring, Spring Boot, Maven, Gradle, Kubernetes, Docker, AWS, React, .NET, Node.js, Kafka, Confluent Suite, OpenRewrite, Git, GitHub</td>
                     </tr>
                     <tr>
                       <th scope="row" className="text-start" style={{ width: '35%' }}>Professional Skills</th>
@@ -180,7 +180,14 @@ function Resume() {
                   <div className="col-md-6 mb-4">
                     <div className="card h-100 shadow-sm">
                       <div className="card-body text-start">
-                        <h5 className="card-title">Home Automation</h5>
+                        <div className="d-flex align-items-center mb-2">
+                          <h5 className="card-title mb-0 me-1">Home Automation</h5>
+                          <img
+                            src="https://upload.wikimedia.org/wikipedia/en/thumb/4/49/Home_Assistant_logo_%282023%29.svg/1280px-Home_Assistant_logo_%282023%29.svg.png"
+                            alt="Home Assistant Logo"
+                            style={{ width: '22px', height: '22px', marginLeft: '4px', marginBottom: '6px', alignContent: 'top' }}
+                          />
+                        </div>
                         <p className="mb-2 text-muted">February 2025</p>
                         <p className="card-text mb-1 text-secondary">
                           Established a smart home setup using a Raspberry Pi running Home Assistant OS
@@ -223,7 +230,7 @@ function Resume() {
                           Analysis of my recent runs using data pulled from a Garmin MCP and insights generated with Gemini
                         </p>
                         <p className="card-text mb-1 text-secondary">
-                          Utilized an Express JS backend to facilitate the API calls, and stored the data in a mySql database
+                          Utilized a self-hosted Express.js backend to facilitate the API calls, and stored the data in a mySql database with a mounted flash drive
                         </p>
                       </div>
                     </div>
