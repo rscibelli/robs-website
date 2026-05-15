@@ -10,4 +10,21 @@ async function runningSummary() {
     return data;
 }
 
-export { runningSummary };
+async function getTeeTimes(courseName, date) {
+    if (!courseName) {
+        throw new Error('Missing required parameter: courseName');
+    }
+
+    const queryString = new URLSearchParams({ courseName, date }).toString();
+    const response = await fetch(`${baseUrl}/get-tee-times?${queryString}`);
+
+    if (!response.ok) {
+        console.log("Error calling endpoint:", response.statusText);
+        throw new Error("Failed to fetch tee times with error: " + response.statusText);
+    }
+
+    const data = await response.json();
+    return data;
+}
+
+export { runningSummary, getTeeTimes };

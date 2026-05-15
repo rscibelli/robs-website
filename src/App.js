@@ -2,6 +2,7 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Resume from './components/Resume.jsx';
 import Running from "./components/Running.jsx";
+import TeeTimes from "./components/TeeTimes/TeeTimes.jsx";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Resume />} />
             <Route path="/run" element={<Running />} />
+            <Route path="/golf" element={<TeeTimes />} />
           </Routes>
         </main>
       </div>

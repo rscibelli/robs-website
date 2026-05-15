@@ -247,7 +247,7 @@ function Resume() {
             <div className="col-md-8 mx-auto">
               <h4 className="mb-2">Hobbies</h4>
               <p className="text-muted mb-0">
-                🏃‍♂️ <Link to="/run" className="text-blue-600 hover:underline">Running</Link> • 🏌️ Golfing • 🥾 Hiking • 💻 Playing with tech
+                🏃‍♂️ <Link to="/run" className="text-blue-600 hover:underline">Running</Link> • 🏌️ <Link to="/golf" className="text-blue-600 hover:underline">Golfing</Link> • 🥾 Hiking • 💻 Playing with tech
               </p>
             </div>
           </div>
