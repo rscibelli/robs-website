@@ -16,7 +16,7 @@ async function getTeeTimes(courseName, date) {
     }
 
     const queryString = new URLSearchParams({ courseName, date }).toString();
-    const response = await fetch(`${baseUrl}/get-tee-times?${queryString}`);
+    const response = await fetch(`${baseUrl}/api/get-tee-times?${queryString}`);
 
     if (!response.ok) {
         console.log("Error calling endpoint:", response.statusText);
