@@ -9,6 +9,11 @@ const courses = [
         displayName: 'Ledges Golf Club',
         phone: '4135322307',
     },
+    {
+        name: 'quabog',
+        displayName: 'Quabog Country Club',
+        phone: '4132675294',
+    },
 ];
 
 export default courses;
