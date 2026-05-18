@@ -14,6 +14,16 @@ const courses = [
         displayName: 'Quaboag Country Club',
         phone: '4132675294',
     },
+    {
+        name: 'chicopee',
+        displayName: 'Chicopee Country Club',
+        phone: '4135949295',
+    },
+    {
+        name: 'franconia',
+        displayName: 'Franconia Golf Course',
+        phone: '4137876467',
+    }
 ];
 
 export default courses;
