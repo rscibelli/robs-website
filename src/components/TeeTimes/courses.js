@@ -10,8 +10,8 @@ const courses = [
         phone: '4135322307',
     },
     {
-        name: 'quabog',
-        displayName: 'Quabog Country Club',
+        name: 'quaboag',
+        displayName: 'Quaboag Country Club',
         phone: '4132675294',
     },
 ];
