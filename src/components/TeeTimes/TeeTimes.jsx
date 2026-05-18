@@ -123,16 +123,19 @@ function TeeTimes() {
                             <div className="card-body">
                                 <h5 className="card-title">{slot.courseName}</h5>
                                 <p className="card-text mb-1">
+                                    <strong>Date:</strong> {slot.date}
+                                </p>
+                                <p className="card-text mb-1">
                                     <strong>Time:</strong> {slot.time}
                                 </p>
                                 <p className="card-text mb-1">
-                                    <strong>Price:</strong> {slot.priceRange}
+                                    <strong>Price:</strong> {slot.price}
                                 </p>
                                 <p className="card-text mb-1">
-                                    <strong>Capacity:</strong> {slot.golferCapacity}
+                                    <strong>Capacity:</strong> {slot.playerCapacity || 'N/A'}
                                 </p>
                                 <p className="card-text mb-3">
-                                    <strong>Holes:</strong> {slot.holesAvailable}
+                                    <strong>Holes:</strong> {slot.holes}
                                 </p>
                                 <a
                                     href={slot.bookingUrl}
