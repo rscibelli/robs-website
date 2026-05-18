@@ -116,7 +116,7 @@ function TeeTimes() {
             <div className="card shadow-sm mb-4">
                 <div className="card-body d-flex flex-column flex-sm-row justify-content-between align-items-start align-items-sm-center">
                     <div>
-                        <h5 className="card-title mb-1">Course Contact</h5>
+                        <h5 className="card-title mb-0">Course Contact</h5>
                         <p className="card-text mb-0">{selectedCourse.displayName}</p>
                     </div>
                     <a href={`tel:${displayPhone}`} className="btn btn-outline-success mt-3 mt-sm-0">
