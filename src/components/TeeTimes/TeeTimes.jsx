@@ -132,34 +132,32 @@ function TeeTimes() {
                 <div className="alert alert-warning">No tee times found for the selected course and date.</div>
             )}
 
-            <div className="row row-cols-1 row-cols-md-2 g-4">
+            <div className="row row-cols-1 row-cols-md-4 g-2">
                 {teeTimes.map((slot, index) => (
                     <div className="col" key={`${slot.courseName}-${slot.time}-${index}`}>
                         <div className="card h-100 shadow-sm">
-                            <div className="card-body">
-                                <h5 className="card-title">{slot.courseName}</h5>
+                            <div className="card-body p-2">
+                                <h6 className="card-title mb-2">{slot.courseName}</h6>
+
                                 <p className="card-text mb-1">
-                                    <strong>Date:</strong> {slot.date}
+                                    <strong>{slot.time}</strong> • {slot.date}
                                 </p>
+
                                 <p className="card-text mb-1">
-                                    <strong>Time:</strong> {slot.time}
+                                    {slot.price} • {slot.holes} holes
                                 </p>
-                                <p className="card-text mb-1">
-                                    <strong>Price:</strong> {slot.price}
+
+                                <p className="card-text mb-2">
+                                    Capacity: {slot.playerCapacity || 'N/A'}
                                 </p>
-                                <p className="card-text mb-1">
-                                    <strong>Capacity:</strong> {slot.playerCapacity || 'N/A'}
-                                </p>
-                                <p className="card-text mb-3">
-                                    <strong>Holes:</strong> {slot.holes}
-                                </p>
+
                                 <a
                                     href={slot.bookingUrl}
                                     target="_blank"
                                     rel="noreferrer"
-                                    className="btn btn-outline-primary"
+                                    className="btn btn-sm btn-outline-primary w-100"
                                 >
-                                    Book Tee Time
+                                    Book
                                 </a>
                             </div>
                         </div>
