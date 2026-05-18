@@ -15,6 +15,10 @@ function TeeTimes() {
     const [error, setError] = useState(null);
     const navigate = useNavigate();
 
+    const selectedCourse = courses.find((course) => course.name === courseName) || courses[0];
+    const displayPhone = selectedCourse?.phone ?? '';
+    const formattedPhone = displayPhone.replace(/(\d{3})(\d{3})(\d{4})/, '($1) $2-$3');
+
     const loadTeeTimes = async (event) => {
         if (event) {
             event.preventDefault();
@@ -106,6 +110,18 @@ function TeeTimes() {
                             </button>
                         </div>
                     </form>
+                </div>
+            </div>
+
+            <div className="card shadow-sm mb-4">
+                <div className="card-body d-flex flex-column flex-sm-row justify-content-between align-items-start align-items-sm-center">
+                    <div>
+                        <h5 className="card-title mb-1">Course Contact</h5>
+                        <p className="card-text mb-0">{selectedCourse.displayName}</p>
+                    </div>
+                    <a href={`tel:${displayPhone}`} className="btn btn-outline-success mt-3 mt-sm-0">
+                        Call {formattedPhone}
+                    </a>
                 </div>
             </div>
 
