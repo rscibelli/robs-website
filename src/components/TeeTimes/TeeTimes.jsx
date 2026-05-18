@@ -157,7 +157,7 @@ function TeeTimes() {
                                     rel="noreferrer"
                                     className="btn btn-sm btn-outline-primary w-100"
                                 >
-                                    Book
+                                    Book Tee Time
                                 </a>
                             </div>
                         </div>
