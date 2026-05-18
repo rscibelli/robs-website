@@ -23,6 +23,11 @@ const courses = [
         name: 'franconia',
         displayName: 'Franconia Golf Course',
         phone: '4137876467',
+    },
+    {
+        name: 'veterans',
+        displayName: 'Veterans Memorial Golf Course',
+        phone: '4137876449',
     }
 ];
 
