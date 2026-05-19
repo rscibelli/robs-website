@@ -28,6 +28,21 @@ const courses = [
         name: 'veterans',
         displayName: 'Veterans Memorial Golf Course',
         phone: '4137876449',
+    },
+    {
+        name: 'cold-spring',
+        displayName: 'Cold Spring Country Course',
+        phone: '4133234888',
+    },
+    {
+        name: 'agawam',
+        displayName: 'Agawam Municipal Golf Course',
+        phone: '4137862194',
+    },
+    {
+        name: 'green-hills',
+        displayName: 'Green Hills Golf Course',
+        phone: '5087991359',
     }
 ];
 
