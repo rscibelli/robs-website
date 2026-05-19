@@ -139,6 +139,10 @@ function TeeTimes() {
                             <div className="card-body p-2">
                                 <h6 className="card-title mb-2">{slot.courseName}</h6>
 
+                                <p className="card-text mb-2">
+                                    Details: {slot.details || 'N/A'}
+                                </p>
+
                                 <p className="card-text mb-1">
                                     <strong>{slot.time}</strong> • {slot.date}
                                 </p>
@@ -155,7 +159,7 @@ function TeeTimes() {
                                     href={slot.bookingUrl}
                                     target="_blank"
                                     rel="noreferrer"
-                                    className="btn btn-sm btn-outline-primary w-100"
+                                    className="btn btn-sm btn-outline-primary w-50"
                                 >
                                     Book Tee Time
                                 </a>
